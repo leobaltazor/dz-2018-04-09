@@ -39,13 +39,13 @@ function nav() {
 		var el = document.querySelector(".active")
 		if (move == "next") {
 			if (el.nextElementSibling) { 	//проверяет существует ли следующий элемент,
-																		//если существует выделяем след элемент и снимаем выделение с текущего
+//если существует выделяем след элемент и снимаем выделение с текущего
 				document.querySelector(".active").nextElementSibling.classList.add('active');
 				document.querySelector(".active").classList.remove('active')
 			}
-		} else { //проверяем существует ли пред элемент
-						//если существует выделяем пред элемент и снимаем выделение с текущего
-			if (el.previousElementSibling) {
+		} else { 
+			if (el.previousElementSibling) {//проверяем существует ли пред элемент
+//если существует выделяем пред элемент и снимаем выделение с текущего
 				document.querySelector(".active").previousElementSibling.classList.add('active');
 				document.querySelector(".active").nextElementSibling.classList.remove('active')
 			}
